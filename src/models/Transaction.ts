@@ -1,13 +1,13 @@
 import { uuid } from 'uuidv4';
 
 class Transaction {
-  id: string;
+  id: String;
 
-  title: string;
+  title: String;
 
   value: number;
 
-  type: 'income' | 'outcome';
+  type: String;
 
   constructor({ title, value, type }: Omit<Transaction, 'id'>) {
     this.id = uuid();
